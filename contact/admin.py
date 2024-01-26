@@ -8,6 +8,7 @@ class ContactAdmin(admin.ModelAdmin):
     ordering = ('-id',)
     search_fields = ('first_name', 'last_name',)
     list_filter = 'created_date',
+    list_editable = ('show',)
     list_per_page=10
 
 @admin.register(Category)
